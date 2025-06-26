@@ -64,7 +64,7 @@ def plot_imaging_heatmap(time : np.ndarray, data : np.ndarray, ax : Axes) -> Qua
 
     pc = ax.pcolormesh(
         xx, yy, data,
-        cmap = 'Blues', vmin = 0, vmax = 3.0
+        cmap = 'Blues', vmin = 0, vmax = 2.0
     )
 
     ax.set_yticks([])
@@ -142,7 +142,8 @@ def plot_demo_file(file : Path, downsample_by : int = 1, subtract_offset : bool 
     # Timestamps of the behavior data
     vr_timestamps = file_dict['vr_timestamps']
     # VR position in x, y space as a complex number (x + iy)
-    vr_position = file_dict['vr_position']
+    # not used here but you can if you want!
+    vr_position = file_dict['vr_position'] #noqa
     # Timestamp of the moment the visual environment is activated
     vr_on_time = file_dict['bar_on_time']
 
