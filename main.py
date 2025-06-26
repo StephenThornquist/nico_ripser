@@ -173,33 +173,6 @@ def plot_demo_file(file : Path, downsample_by : int = 1, subtract_offset : bool 
         subtract_offset = subtract_offset,
     )
 
-    # # subtract out the offset between the phase
-    # # and the VR heading so that they overlay
-    # # (the offset is arbitrary from fly to fly)
-    
-    # x[1].plot(
-    #     vr_timestamps,
-    #     vr_heading,
-    #     'o',
-    #     markersize = 1,
-    #     color = '#000000',
-    #     label = 'VR heading',
-    # )
-
-    # x[1].plot(
-    #     image_timestamps,
-    #     np.angle(phase),
-    #     'o',
-    #     markersize = 1,
-    #     label = 'EPG phase'
-    # )
-
-    # x[1].legend(
-    #     loc = 'upper right',
-    #     fontsize = 8,
-    #     markerscale = 2,
-    # )
-
     xticks = np.linspace(
         image_timestamps[0],
         image_timestamps[-1],

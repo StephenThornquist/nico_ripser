@@ -2,6 +2,8 @@
 
 Here's a demo script to parse the analyses and run `ripser` on the data.
 
+Simply run `main.py` in an appropriate `Python` environment.
+
 ## Installation
 
 I use `uv` for environment management, which is nice because it has lockfiles to
