@@ -17,7 +17,11 @@ are described here:
 
 First clone the github repository onto your machine:
 
-`git clone <>`
+`git clone git@github.com:StephenThornquist/niko_ripser.git`
+
+or
+
+`git clone https://github.com/StephenThornquist/niko_ripser.git`
 
 Go to the directory containing the repository while using the Python
 interpreter of your choice (e.g. in the environment you want to install into) and type
