@@ -4,6 +4,10 @@ Here's a demo script to parse the analyses and run `ripser` on the data.
 
 Simply run `main.py` in an appropriate `Python` environment.
 
+Note that these flies generally engage in "menotaxis" once they can see
+the bar, so when the VR turns on, they tend to walk in a straight line
+(which you can see if you plot the VR position, which is in millimeters).
+
 ## Installation
 
 I use `uv` for environment management, which is nice because it has lockfiles to
